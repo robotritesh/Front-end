@@ -45,6 +45,8 @@
 //     console.log(any + ":",nobj[any])
 // }
 
+
+
 // let nobj = {
 //     a: 1,
 //     b: 2,
@@ -58,12 +60,68 @@
 //     }
 // }
 
-let obj = {
-    firstName : "Ritesh",
-    lastName: "Dhote",
-    greet: function(){
-        console.log("Hi everyone", this.firstName , this.lastName)
-    }
-}
 
-obj.greet()
+
+// let obj = {
+//     firstName : "Ritesh",
+//     lastName: "Dhote",
+//     greet: function(){
+//         console.log("Hi everyone", this.firstName , this.lastName)
+//     }
+// }
+
+// obj.greet()
+
+
+
+
+// let name = "ritesh"
+
+// // let str = name.toUpperCase()
+
+// // console.log(str)
+
+// console.log(name.toUpperCase())
+
+
+
+// let sets = "my name is ritesh"
+
+// let narr = sets.split(" ")
+
+// console.log(narr)
+
+
+//if i am use # so that give me singal alphabet in str
+// let sets = "my n#me #s r#tesh"
+
+// let narr = sets.split("")
+
+// console.log(narr)
+
+
+
+// let str = " a b c d e"
+
+// let narr = str.split(" ")
+
+// narr[2] = "f"
+
+// narr = narr.join()
+
+// console.log(narr)
+
+
+
+
+let arr = [1,2,3,45,5,6]
+
+// console.log(arr.pop())
+// console.log(arr)
+
+arr.push(7)
+console.log(arr)
+
+
+
+
