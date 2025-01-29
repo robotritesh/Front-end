@@ -1,0 +1,29 @@
+h1{
+    color:blue;
+}
+
+p{
+    color: blueviolet;
+}
+
+.containar>h2{
+    color:green;
+}
+
+.containar>p{
+    color: brown;
+}
+
+#Box{
+    height: 400px;
+    width: 300px;
+    background-color: aqua;
+    padding-top: 10px;
+}
+
+.box{
+    background-color: red;
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+}
