@@ -1,0 +1,44 @@
+h1+p{
+    color: brown;
+}
+
+div .cls{
+color: aqua;
+}
+
+h2~span{
+    color: blue;
+}
+
+p::first-letter{
+    color: brown;
+    font-size: 30px;
+}
+
+h1::selection{
+    background-color: red;
+    color: white;
+}
+
+button{
+background-color: blue;
+border: none;
+height: 50px;
+width: 50px;
+}
+
+button:hover{
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+
+div:has(h2){
+    color: blue;
+    border: 1px solid;
+}
+
+div:has(h2):hover{
+    background-color: brown;
+}
