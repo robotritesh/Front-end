@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #containar{
+            width: 50vw;
+            height: 50vw;
+            background-color: blueviolet;
+            margin: auto;
+            position: relative;
+        }
+
+        div#containar>div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* border-radius: 50%; */
+            position: absolute;
+        }
+
+        div#containar>div:first-child{
+            left: 40%;
+            top: 40%;
+            border-radius: 50%;
+        }
+
+        div#containar>div:nth-of-type(2){
+            left: 40%;
+            top: 0;
+        }
+
+        div#containar>div:nth-of-type(3){
+            left: 40%;
+            bottom: 0;
+        }
+
+        div#containar>div:nth-of-type(4){
+            top: 40%;
+            right: 0;
+        }
+
+        div#containar>div:nth-of-type(5){
+            top: 40%;
+            left: 0;
+        }
+        
+        h4{
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        #bar1{
+            height: 500px;
+            width: 100%;
+            display: flex;
+            background-color: rgb(136, 133, 133);
+            gap: 10px;
+        }
+
+        /* div#bar1>div:nth-of-type(1){
+            background-color: rgb(158, 8, 33);
+            height: 50%;
+        } */
+
+        .barbox1{
+            width: 10%;
+            height: 100px;
+            background-color: rgb(255, 247, 0);
+        }
+        .barbox2{
+            width: 10%;
+            height: 200px;
+            background-color: rgb(0, 60, 255);
+        }
+        .barbox3{
+            width: 10%;
+            height: 400px;
+            background-color: rgb(0, 255, 64);
+        }
+        .barbox4{
+            width: 10%;
+            height: 500px;
+            background-color: rgb(26, 39, 39);
+        }
+        .barbox5{
+            width: 10%;
+            height: 450px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="containar">
+        <div><h4>box1</h4></div>
+        <div><h4>box1</h4></div>
+        <div><h4>box1</h4></div>
+        <div><h4>box1</h4></div>
+        <div><h4>box1</h4></div>
+    </div>
+
+    <div id="bar1">
+        <div class="barbox1"></div>
+        <div class="barbox2"></div>
+        <div class="barbox3"></div>
+        <div class="barbox4"></div>
+        <div class="barbox5"></div>
+        <div class="barbox1"></div>
+        <div class="barbox2"></div>
+        <div class="barbox3"></div>
+        <div class="barbox4"></div>
+        <div class="barbox5"></div>
+    </div>
+</body>
+</html>
