@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#box{
+            height: 50vh;
+            width: 90%;
+            gap: 10px;
+            background-color: rgb(221, 255, 0);
+            display: grid;
+            grid-template-areas: "q1 q1 q2"
+                                 "q3 q4 q2";
+        }
+
+        div#box>div{
+            border: 1px solid;
+        }
+
+        div#box>div:nth-of-type(1){
+            background-color: chartreuse;
+            grid-area: q1;
+        }
+
+        div#box>div:nth-of-type(2){
+            background-color: blueviolet;
+            grid-area: q2;
+        }
+        div#box>div:nth-of-type(3){
+            background-color: brown;
+            grid-area: q3;
+        }
+        div#box>div:nth-of-type(4){
+            background-color: aqua;
+            grid-area: q4;
+        }
+
+
+        @media (min-width: 350px)and (max-width: 768px){
+            div#box{
+            background-color: rgb(221, 255, 0);
+            grid-template-areas: ". q1 q2"
+                                 "q3 q4 .";
+        }
+        }
+                  /* start 0   <= 850px */
+        /* @media (width <= 850px){
+            div#box{
+            background-color: rgb(221, 255, 0);
+            grid-template-areas: "q3 q1 q2"
+                                 "q3 q4 q2";
+        }
+        } */
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
