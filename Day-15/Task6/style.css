@@ -93,7 +93,19 @@ p{
     height: 100%;
 }
 
-@media (max-width:780px){
+@media all and (max-width:980px) and (min-width:750px){
+    #box{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+}
+
+@media all and (max-width:749px) and (min-width:350px){
     #box{
     width: 90%;
     height: 90vh;
